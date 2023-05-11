@@ -1,6 +1,6 @@
 import { Inter } from "next/font/google";
 import Navbar from "../components/Navbar/Navbar";
-import NewMatch from "../components/NewMatch/NewMatch";
+import ScoreBoard from "../components/ScoreBoard/ScoreBoard";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -9,7 +9,7 @@ export default function Home() {
     <div className="h-screen">
       <Navbar />
       <main>
-        <NewMatch />
+        <ScoreBoard />
       </main>
     </div>
   );
