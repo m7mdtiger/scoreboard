@@ -41,8 +41,6 @@ describe("OngoingGames", () => {
       />
     );
 
-    screen.debug();
-
     const heading = screen.getByText(/ongoing games/i);
 
     expect(heading).toBeInTheDocument();

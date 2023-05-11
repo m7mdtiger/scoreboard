@@ -21,7 +21,6 @@ export default function GamesSummary({ games }) {
     <div>
       <h2 className="text-center m-4">Games Summary</h2>
       <div className="m-4 grid grid-cols-2 border shadow-lg mt-4 bg-slate-300">
-        {console.log("gamesSummary", gamesSummary)}
         {gamesSummary &&
           gamesSummary.map(([gameId, game]) => (
             <Game key={gameId} pairScore={game} />

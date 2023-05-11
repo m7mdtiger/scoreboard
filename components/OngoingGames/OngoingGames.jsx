@@ -24,7 +24,6 @@ export default function OngoingGames({ games = {}, deleteGame, updateGame }) {
   return (
     <div>
       <h2 className="text-center m-4">Ongoing Games</h2>
-      {console.log("Ongoing Games", games)}
       <div className="m-4 grid grid-cols-2 border shadow-lg mt-4 bg-slate-300">
         {ongoingGames}
       </div>
