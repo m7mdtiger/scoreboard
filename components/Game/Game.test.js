@@ -20,7 +20,6 @@ describe("Game", () => {
   it("renders correctly", () => {
     render(<Game pairScore={pairScore} deleteGame={() => {}} />);
 
-    screen.debug();
     const homeTeam = screen.getByText(/Jordan/i);
     const awayTeam = screen.getByText(/Canada/i);
     const result = screen.getByText(/2 - 1/i);
@@ -67,7 +66,7 @@ describe("Game", () => {
     );
   });
 
-  it.skip("deletes the game on canBeUpdated=true and clicking on delete button", () => {
+  it("deletes the game on canBeUpdated=true and clicking on delete button", () => {
     const deleteGameMock = jest.fn();
 
     render(

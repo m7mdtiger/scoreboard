@@ -24,7 +24,7 @@ export default function Game({
   };
 
   return (
-    <div className="grid grid-cols-4 p-2 border-4">
+    <div className="grid grid-cols-4 p-2 border-4" data-testid="game-data">
       <TeamView
         teamData={{
           countryCode: homeTeam.countryCode.toLowerCase(),
